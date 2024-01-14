@@ -1,0 +1,558 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: white;
+}
+
+/* Navigatie & header */
+
+.nav {
+  display: flex;
+  align-items: center; 
+  width: 100%;
+  margin: 0px 5px;
+}
+
+.logo {
+  border: 5px solid black;
+  width: 27%;
+  padding: 10px;
+  line-height: 103px;
+  border-left: none;
+  font-size: 100px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  background-color: white;
+  border: 5px solid black;
+  width: 73%;
+  border-left: none;
+  border-right: none;
+}
+
+li a {
+  font-size: 40px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  padding: 2.9px;
+}
+
+li {
+text-align: center;
+border-bottom: 5px solid black;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: rgb(51, 84, 217);
+  color: white;
+}
+/* landingpagina */
+
+.foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1571008887538-b36bb32f4571?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  width: 1512px;
+  height: 550px;
+  background-size: cover;
+  background-repeat: none;
+}
+
+
+/* start css regels voor mobiel scaling*/
+
+.mobiel {
+  margin-top: 50px;
+  background-image: url('https://images.unsplash.com/photo-1571008887538-b36bb32f4571?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  width: 100%;
+  height: 300px; 
+  display: none; 
+}
+
+.titel-img-mobiel {
+  margin: 0;
+  color: #fff;
+  font-size: 32px;
+  padding-top: 125px;
+  text-align: center;
+  display: none;
+}
+
+.ondertitel-img-mobiel {
+  margin: 0px 80px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  display: none;
+  text-align: center;
+
+}
+
+.zoek-button-mobiel {
+  color: white;
+  border-radius: 0px;
+  border: none;
+  background-color: rgb(51, 84, 217);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 0px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  margin: 30px 100px;
+  box-shadow: 5px 5px #000000;
+}
+
+
+/* eind css regels voor mobiel scaling*/
+
+/* Landing page foto met button*/
+.titel-img {
+  margin: 0;
+  color: #fff;
+  font-size: 90px;
+  margin-top: 2px;
+}
+
+.ondertitel-img {
+  margin: 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 200px;
+}
+
+.zoek-button {
+  color: white;
+  border-radius: 0px;
+  border: none;
+  background-color: rgb(51, 84, 217);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 40px;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 5px 5px #000000;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: absolute;
+  transition: 0.s;
+}
+
+/* Eind Landing page foto met button*/
+
+.card-content {
+  padding: 15px 25px;
+}
+
+.zoek-button:hover {
+  background-color: rgb(24, 44, 121);
+  padding: 15px 40px;
+  margin-bottom: 95px;
+}
+
+/* einde landingpagina */
+
+/* Start infosecties */
+
+.container {
+  text-align: center;
+  padding-bottom: 150px;
+  width: 100%;
+}
+
+
+/* blauwe sectie "wat is loopmaatje" */
+
+.titels-secties-over  {
+  font-size: 100px;
+  text-align: center;
+  border: solid 5px;
+  border-color: black;
+  color: black;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 0px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.tekst-secties-over {
+  font-size: 18px;
+  font-weight: 200;
+  max-width: 450px;
+  color: black;
+  padding: 50px;
+}
+
+#over-loopmaatje {
+  color: black;
+}
+
+#community-loopmaatje {
+  background-color: rgb(51, 84, 217);
+}
+
+.titels-secties-com {
+  font-size: 100px;
+  text-align: center;
+  border: solid 5px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 50px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.tekst-secties-com {
+  font-size: 18px;
+  max-width: 450px;
+  color: white;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+.titels-secties-dienst {
+  font-size: 100px;
+  text-align: center;
+  border: solid 5px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 20px;
+}
+
+.tekst-secties-dienst {
+  font-size: 18px;
+  max-width: 450px;
+  text-align: left;
+  margin: 0;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox-item-com {
+  width: 300px;
+  height: auto;
+  margin: 25px 25px;
+  border-color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.titel-com-item {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.tekst-com-item {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.foto-community {
+  max-width: 100%;
+  display: block;
+  max-height: 330px;
+  border-radius: 10px;
+}
+
+/* flexbox 1 */
+.flexbox-item-dienst-1 {
+  display: flex; 
+  height: auto;
+  margin: 25px 300px;
+}
+
+.foto-dienst-1 {
+  max-width: 45%;
+  object-fit: contain;
+  margin-right: 40px;
+}
+
+
+.tekst-dienst-1 {
+  text-align: left;
+  font-weight: 200;
+}
+/* flexbox 1 */
+
+
+/* flexbox 2 */
+.flexbox-item-dienst-2 {
+  display: flex; 
+  height: auto;
+  margin: 25px 300px;
+}
+
+.foto-dienst-2 {
+  max-width: 45%;
+  object-fit: contain;
+  margin-right: 40px; 
+}
+.tekst-dienst-2 {
+  text-align: right;
+
+}
+/* flexbox 2 */
+
+
+/* flexbox 3 */
+.flexbox-item-dienst-3 {
+  display: flex; 
+  height: auto;
+  margin: 25px 300px;
+}
+
+.foto-dienst-3 {
+  max-width: 45%;
+  object-fit: contain;
+  margin-right: 40px; 
+}
+
+.tekst-dienst-3 {
+  text-align: left;
+}
+/* flexbox 3 */
+
+
+/* Footer*/
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+
+}
+
+.titel-footer {
+  line-height: 50px;
+  color: white;
+}
+
+.beschrijving-footer {
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 967px) {
+  .foto, .header-container {
+    display: none;
+  }
+
+  .titels-secties-dienst
+  , .titels-secties-over
+  , .titels-secties-com{
+    font-size: 50px;
+  }
+
+  .mobiel, .titel-img-mobiel, .ondertitel-img-mobiel, .zoek-button-mobiel {
+    display: block;
+  }
+
+  .mobiel {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .logo-footer {
+    width: 50%;
+    margin: 20px 25px 20px 20px;
+  }
+
+
+  .container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 100%;
+    padding-top: 5px;
+    line-height: 100px;
+    margin: 20px;
+    border: none;
+    text-align: center;
+  }
+
+
+  /*titels tekst wat is loopmaatje*/
+  .titels-secties-over {
+    font-size: 24px;
+    line-height: 50px;
+    color: white;
+  }
+  
+  .tekst-secties-over {
+    font-size: 18px;
+    max-width: 450px;
+    color: white;
+    padding: 0px 10px;
+  }
+
+  .tekst-secties-com {
+    font-size: 18px;
+    max-width: 450px;
+    padding: 0px 10px;
+  }
+
+  /* titels tekst community */
+
+  .titels-secties-com {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .tekst-secties-com {
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+
+  /* opmaak info containers */
+
+  .over-loopmaatje {
+    background-color: rgb(51, 84, 217);
+    padding: 50px;
+  }
+  
+  .community-loopmaatje {
+    padding: 50px;
+  }
+
+  .tekst-secties-dienst {
+    padding: 0px 50px;
+  }
+
+  .titels-secties-dienst {
+    margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    background-color: white;
+    border: 5px solid black;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    margin-top: 10x;
+  }
+
+  li {
+    text-align: center;
+    border-bottom: 5px solid black;
+  }
+
+  li a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(51, 84, 217);
+    color: white;
+  }
+
+
+  .zoek-button-mobiel {
+    background-color: rgb(51, 84, 217);
+  }
+
+
+  .main-text {
+    font-size: 120px;
+    line-height: 80px;
+    padding: 11px 
+  }
+  
+  .sub-text {
+    font-size: 20px;
+    margin-top: -14px; 
+    margin-left: 320px;
+  }
+
+
+  .flexbox-item-dienst-1,
+  .flexbox-item-dienst-2,
+  .flexbox-item-dienst-3 {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin: 0px 0px; 
+  }
+
+  .foto-dienst-1,
+  .foto-dienst-2,
+  .foto-dienst-3 {
+    max-width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .tekst-dienst-1,
+  .tekst-dienst-2,
+  .tekst-dienst-3 {
+    text-align: left; 
+    margin: 0px 25px 50px 25px;
+  }
+
+  #zoek-loopmaatje {
+    margin: 0;
+    padding: 0;
+  }
+
+  #over-loopmaatje {
+    margin: 0;
+  }
+  #diensten-loopmaatje {
+    margin: 0;
+  }
+
+  .mobiel {
+    margin-top: 0px;
+    margin: 0;
+  }
+}
